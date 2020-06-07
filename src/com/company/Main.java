@@ -1,8 +1,11 @@
 package com.company;
 
-public class Main {
+import com.company.controller.Controller;
+import com.company.view.MainWindow;
 
+public class Main {
     public static void main(String[] args) {
-	// write your code here
+        Controller controller = new Controller();
+        MainWindow window = new MainWindow(controller);
     }
 }
